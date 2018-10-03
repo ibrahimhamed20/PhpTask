@@ -70,7 +70,7 @@ if(isset($_POST["FName"])) {
 
         if (empty($formErrors)) {
 
-            $sql = "INSERT INTO users (FName, LName, Telephone, Street, HouseNumber, ZipCode, City, AccountOwner, IBAN, paymentDataId) VALUES ('$fname', '$lname', '$phone', '$street', '$house', '$zip', '$city', '$accountowner', '$iban', '$result')";
+            $sql = "INSERT INTO users (FName, LName, Telephone, Street, HouseNumber, ZipCode, City, AccountOwner, IBAN) VALUES ('$fname', '$lname', '$phone', '$street', '$house', '$zip', '$city', '$accountowner', '$iban')";
 
             if (mysqli_query($conn, $sql)) {
                 echo '<div id="myForm"><h1>New user created successfully</h1></div>';
